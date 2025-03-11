@@ -44,5 +44,21 @@
       <version>5.7.0</version> <!-- Keeping the latest version -->
     </dependency>
   </dependencies>
-  
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M7</version>
+            <configuration>
+                <testSourceDirectory>src/test/java</testSourceDirectory>
+                <includes>
+                    <include>**/LoginRunner.java</include>
+                </includes>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+
 </project>
