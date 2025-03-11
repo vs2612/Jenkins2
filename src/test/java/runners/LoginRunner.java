@@ -9,7 +9,8 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/features",
         glue = "stepDefinitions",
         tags = "@Login",
-        plugin = {"pretty", "json:target/cucumber-rep"}
+        plugin = {"pretty", "json:target/cucumber-reports/cucumber.json"}
+
 )
 public class LoginRunner extends AbstractTestNGCucumberTests {
 
